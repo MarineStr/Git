@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+        @media (max-width: 1160px) {
+            .flex-section {
+                flex-direction: column;
+                flex: 1;
+            }
+        }
+
+        @media (max-width: 1440px) {
+            body {
+                font-size: large;
+            }
+
+        }
+
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        body {
+            font-size: 1rem; 
+        }
+
+        .wrapper {
+            margin-inline: auto;
+            max-width: 35rem;
+        }
+
+        header {
+            text-align: center;
+            margin-block: 3rem;
+            margin-top: 5rem;
+        }
+
+        h1 {
+            color: hsl(234, 12%, 34%);
+        }
+
+        .not_thin {
+            font-weight: normal;
+            color:  hsl(229, 6%, 66%)
+        }
+
+        p {
+            color: rgb(174, 173, 173);
+        }
+        
+        .flex-section  {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: center;
+            justify-content: center;
+            margin-top: 5rem;
+            margin-bottom: 5rem;
+        }
+
+        .middle-box {
+            gap: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .shadow-box {
+            box-shadow: -1px 4px 20px 1px hsl(229, 6%, 66%);
+            width: 20rem;
+            border-radius: 5px;
+            padding: 1rem;
+            padding-left: 2rem;
+            border-top: 5px solid hsl(180, 62%, 55%);
+        }
+
+        img {
+            margin-left: auto;
+            display: block;
+            margin-top: 2rem;
+            margin-right: 1rem;
+        }
+
+        #border-cyan {
+            border-top: hsl(180, 62%, 55%) 5px solid;
+        }
+
+        #border-red {
+            border-top: hsl(0, 78%, 62%) 5px solid;
+        }
+
+        #border-yellow {
+            border-top: hsl(34, 97%, 64%) 5px solid;
+        }
+
+        #border-navy {
+            border-top: hsl(212, 86%, 64%) 5px solid;
+        }
+ 
+    </style>
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <h1>
+                <span class="not_thin">Reliable, efficient delivery</span><br>
+                Powered by Technology
+            </h1>
+        <p>
+            Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful
+        </p>
+        </div>
+    </header>
+
+        <main>
+            <section class="flex-section"> 
+
+            <div class="shadow-box"
+                 id="border-cyan">
+                <h2>Supervisor</h2>
+                <p>Monitors activity to identify project roadblocks</p>
+                <img src="images/icon-supervisor.svg" 
+                     alt="">
+            </div>
+
+            <div class="middle-box">
+                <div class="shadow-box"
+                 id="border-red">
+                <h2>Team Builder</h2>
+                <p>Scans our talent network to create the optimal team for your project</p>
+                <img src="images/icon-team-builder.svg" 
+                     alt="">     
+            </div>
+
+            <div class="shadow-box"
+                 id="border-yellow">
+                <h2>Karma</h2>
+                <p>
+                    Regularly evaluates our talent to ensure quality
+                </p>
+                <img src="images/icon-karma.svg"
+                     alt="">
+            </div>
+            </div>
+
+            <div class="shadow-box"
+                 id="border-navy">
+                <h2>Calculator</h2>
+                <p>Uses data from past projects to provide better delivery estimates</p>
+                <img src="images/icon-calculator.svg"
+                     alt="">
+            </div>
+        </section>
+        </main>
+        
+    
+</body>
+</html>
