@@ -14,12 +14,12 @@
                 flex: 1;
             }
         }
+   /*Here*/
+        @media (min-width: 800px) {
 
-        @media (max-width: 1440px) {
-            body {
-                font-size: large;
+            .grid-container {
+            grid-template-columns: repeat(3, 1fr);
             }
-
         }
 
         * {
@@ -101,7 +101,37 @@
         #border-navy {
             border-top: hsl(212, 86%, 64%) 5px solid;
         }
- 
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            max-width: 75rem;
+            gap: 50px;
+            margin: auto;
+            margin-bottom: 5rem;
+        }
+
+        .cyan-box {
+            grid-column: 1;
+            grid-row: 2/4;
+        }
+
+        .red-box {
+            grid-column: 2;
+            grid-row: 1/3;
+        }
+
+        .yellow-box {
+            grid-column: 2;
+            grid-row: 3/5;
+        }
+
+        .navy-box {
+            grid-column: 3;
+            grid-row: 2/4;
+        }
+
     </style>
 </head>
 <body>
@@ -118,9 +148,9 @@
     </header>
 
         <main>
-            <section class="flex-section"> 
-
-            <div class="shadow-box"
+            <section>
+                <div class="flex-section">
+                    <div class="shadow-box"
                  id="border-cyan">
                 <h2>Supervisor</h2>
                 <p>Monitors activity to identify project roadblocks</p>
@@ -155,9 +185,46 @@
                 <img src="images/icon-calculator.svg"
                      alt="">
             </div>
+                </div> 
+        </section>
+
+        <section>
+            <div class="grid-container">
+                <div class="shadow-box cyan-box"
+                 id="border-cyan">
+                <h2>Supervisor</h2>
+                <p>Monitors activity to identify project roadblocks</p>
+                <img src="images/icon-supervisor.svg" 
+                     alt="">
+            </div>
+
+                <div class="shadow-box red-box"
+                 id="border-red">
+                <h2>Team Builder</h2>
+                <p>Scans our talent network to create the optimal team for your project</p>
+                <img src="images/icon-team-builder.svg" 
+                     alt="">     
+            </div>
+
+            <div class="shadow-box yellow-box"
+                 id="border-yellow">
+                <h2>Karma</h2>
+                <p>
+                    Regularly evaluates our talent to ensure quality
+                </p>
+                <img src="images/icon-karma.svg"
+                     alt="">
+            </div>
+
+            <div class="shadow-box navy-box"
+                 id="border-navy">
+                <h2>Calculator</h2>
+                <p>Uses data from past projects to provide better delivery estimates</p>
+                <img src="images/icon-calculator.svg"
+                     alt="">
+            </div>
+            </div>
         </section>
         </main>
-        
-    
 </body>
 </html>
