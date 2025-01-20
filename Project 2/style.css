@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+@media (max-width:425px) {
+    .flex-container {
+        background-color: rgb(225, 255, 0);
+        flex-direction: column;
+}
+    .blue-container  {
+    
+}
+
+}
+@media (min-width:700px) {
+    .flex-container {
+        background-color: rgb(64, 255, 0);
+        flex-direction: row;
+}
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Hanken Grotesk", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+main {
+    height: 100vh;
+    background-color: hsl(222, 76%, 97%);
+}
+
+.flex-container {
+    margin: auto;
+    display: flex;
+    width: fit-content;
+    transform: translateY(10%);
+}
+
+.grid-container {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 10rem);
+    grid-template-rows:repeat(4, 1fr);
+    grid-template-areas: 
+    "icon-reaction name-reaction score-reaction"
+    "icon-memory name-memory score-memory"
+    "icon-verbal name-verbal score-verbal"
+    "icon-visual name-visual score-visual";
+}
+
+.icon-reaction {
+    grid-area: icon-reaction;
+}
+
+.name-reaction {
+    grid-area: name-reaction;
+}
+
+.score-reaction {
+    grid-area: score-reaction;
+}
+
+.icon-memory {
+    grid-area: icon-memory;
+}
+
+.name-memory {
+    grid-area: name-memory;
+}
+
+.score-memory {
+    grid-area: score-memory;
+}
+
+.icon-verbal {
+    grid-area: icon-verbal;
+}
+
+.name-verbal {
+    grid-area: name-verbal;
+}
+
+.score-verbal {
+    grid-area: score-verbal;
+}
+
+.icon-visual {
+    grid-area: icon-visual;
+}
+
+.name-visual {
+    grid-area: name-visual;
+}
+
+.score-visual {
+    grid-area: score-visual;
+}
+
+.container-of-cards {
+    display: block;
+}
+
+.wrapper-margin {
+    margin: 1.5rem;
+}
+
+.margin {
+    margin-left: 3rem;
+    margin-right: 2rem;
+}
+
+.wrapper-margin h2,
+.dark-blue_color {
+    color: hsl(224, 30%, 27%);
+    font-weight: 700;
+}
+
+.wrapper-of-a-card {
+    display: flex;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+.red {
+    color: hsl(0, 100%, 67%);
+    background-color: hsla(0, 100%, 67%, 0.063);
+}
+
+.yellow {
+    color: hsl(39, 100%, 56%);
+    background-color: hsla(39, 100%, 56%, 0.063);
+}
+
+.green {
+    color: hsl(166, 100%, 37%);
+    background-color: hsla(166, 100%, 37%, 0.063);
+}
+
+.blue {
+    color: hsl(234, 85%, 45%);
+    background-color: hsla(234, 85%, 45%, 0.063);
+}
+
+.blue-container {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    width: 18.3rem;
+    height: 25rem;
+    border-radius: 25px;
+    text-align: center;
+    transform: translateX(1.3rem);
+    /* position: absolute;
+    right: 17rem; */
+}
+
+.blue-container > p {
+    border: 2px solid;
+}
+
+.score-circle {
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    color: hsl(241, 100%, 89%);
+    border-radius:100%;
+    width: 8.9rem;
+    padding: 2rem;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.score-circle div {
+    font-size: 3rem;
+    font-weight: 900;
+    color: hsl(0, 0%, 100%);
+}
+
+.score-circle + h2 {
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 1rem;
+    font-weight: 700;
+    scale: 1.2;
+}
+
+.blue-container  p {
+    color: hsl(241, 100%, 89%);
+}
+
+.white-container {
+    background-color:  hsl(0, 0%, 100%);
+    width: 18.3rem;
+    height: 25rem;
+    border-radius: 0 20px 20px 0;
+    box-shadow: 7px 5px 20px 0px hsl(241, 100%, 89%);
+}
+
+.margin-auto-left {
+    margin-left: auto;
+}
+
+.your-result {
+    text-align: center;
+    color: hsl(241, 100%, 89%);
+}
+
+button {
+    padding-block: 1rem;
+    padding-inline: 4.5rem;
+    border-radius: 35px;
+    border: none;
+    margin: auto;
+    margin-top: 1.5rem;
+    display: block;
+    background-color: hsl(224, 30%, 27%);
+    color: hsl(222, 76%, 97%);
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    cursor: pointer;
+}
